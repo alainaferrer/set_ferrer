@@ -122,6 +122,6 @@ def eta(first_stop, second_stop, route_map):
         for (a, b) in route_map.keys():
             if a == current_stop:
                 time+= route_map[a, b]['travel_time_mins']
-                current_stop=a
+                current_stop=b
                 break
     return (time)
